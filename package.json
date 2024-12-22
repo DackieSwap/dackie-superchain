@@ -1,0 +1,21 @@
+{
+  "name": "dackie-superchain",
+  "packageManager": "pnpm@9.0.2",
+  "description": "DACKIE Superchain is inherited from the OP SuperchainERC20 repository (https://github.com/ethereum-optimism/superchainerc20-starter)",
+  "scripts": {
+    "clean": "rm -rf node_modules .nx",
+    "install:contracts": "pnpm nx run @dackie-superchain/contracts:install",
+    "clean:contracts": "pnpm nx run @dackie-superchain/contracts:clean",
+    "build:contracts": "pnpm nx run @dackie-superchain/contracts:build",
+    "contracts:update:rpcs": "pnpm nx run @dackie-superchain/contracts:update:rpcs",
+    "contracts:deploy:token": "pnpm nx run @dackie-superchain/contracts:deploy:token"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "env-cmd": "^10.1.0",
+    "nx": "^20.0.7",
+    "prettier": "^3.3.3",
+    "wait-port": "^1.1.0"
+  }
+}

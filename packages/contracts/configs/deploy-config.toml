@@ -1,0 +1,9 @@
+[deploy_config]
+salt = "dackie"
+chains = ["mainnet/base","mainnet/op","mainnet/mode", "mainnet/ink", "mainnet/worldchain"]
+
+[token]
+owner_address = "0x"
+name = "DACKIE Superchain"
+symbol = "DACKIE"
+decimals = 18
